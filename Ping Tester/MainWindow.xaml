@@ -13,7 +13,7 @@
     <Grid Visibility="Visible" Background="#FF212121">
         <Button x:Name="StartButton" Click="StartButton_Click" Margin="343,361,343,0" Content="Start Test" FontFamily="Roboto" FontWeight="normal" BorderBrush="#FF707070" Height="26" VerticalAlignment="Top" Width="164" Background="#FF313131" Foreground="#FFF7F7F7" UseLayoutRounding="False"/>
         <TextBlock x:Name="AppTitle" HorizontalAlignment="Center" Margin="0,29,0,0" TextWrapping="Wrap" Text="Aryant Utility" VerticalAlignment="Top" FontFamily="Roboto" FontSize="32" FontWeight="Light" Foreground="White" TextAlignment="Center"/>
-        <TextBlock x:Name="PingTarget" HorizontalAlignment="Center" Margin="0,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="153" FontFamily="Roboto" Foreground="#FFD2D2D2" Text="Pinging" TextAlignment="Center"/>
+        <TextBlock x:Name="PingTarget" HorizontalAlignment="Center" Margin="0,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="153" FontFamily="Roboto" Foreground="#FFD2D2D2" TextAlignment="Center"/>
         <TextBlock x:Name="PingCounter" HorizontalAlignment="Center" Margin="0,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="60" FontFamily="OpenSans" Foreground="White"
 />
         <TextBlock x:Name="wersja" Margin="0,471,0,0" TextWrapping="Wrap" Foreground="#FF7D7D7D" VerticalAlignment="Top" TextAlignment="center" FontFamily="Roboto" Width="58" Height="19" HorizontalAlignment="Center"><Run Language="pl-pl" Text="V1.0"/></TextBlock>
