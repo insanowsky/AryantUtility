@@ -6,14 +6,21 @@
     <RootNamespace>Ping_Tester</RootNamespace>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <ApplicationIcon>icon1.ico</ApplicationIcon>
   </PropertyGroup>
 
   <ItemGroup>
     <None Remove="favicon.png" />
+    <None Remove="icon1.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="icon1.ico" />
   </ItemGroup>
 
   <ItemGroup>
     <Resource Include="favicon.png" />
+    <Resource Include="icon1.png" />
   </ItemGroup>
 
 </Project>

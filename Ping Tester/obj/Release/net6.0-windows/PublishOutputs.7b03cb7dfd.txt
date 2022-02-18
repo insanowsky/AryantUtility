@@ -1,0 +1,5 @@
+C:\release\beta\AryantUtility.exe
+C:\release\beta\AryantUtility.dll
+C:\release\beta\AryantUtility.deps.json
+C:\release\beta\AryantUtility.runtimeconfig.json
+C:\release\beta\AryantUtility.pdb

@@ -6,17 +6,16 @@
         xmlns:local="clr-namespace:Ping_Tester"
         mc:Ignorable="d"
         ResizeMode="CanMinimize"
-        Title="Aryant Utility" Height="500" Width="900" FontSize="14" FontWeight="Normal" MinWidth="900" MinHeight="550" Background="#FF6D6C6C"
-        WindowStyle="ThreeDBorderWindow" Icon="/favicon.png">
+        Title="Aryant Utility" Height="500" Width="900" FontSize="14" FontWeight="Normal" MinWidth="900" MinHeight="550" Background="#FF6D6C6C" Icon="/icon1.png" Topmost="True">
 
 
     <Grid Visibility="Visible" Background="#FF212121">
         <Button x:Name="StartButton" Click="StartButton_Click" Margin="343,361,343,0" Content="Start Test" FontFamily="Roboto" FontWeight="normal" BorderBrush="#FF707070" Height="26" VerticalAlignment="Top" Width="164" Background="#FF313131" Foreground="#FFF7F7F7" UseLayoutRounding="False"/>
-        <TextBlock x:Name="AppTitle" HorizontalAlignment="Center" Margin="0,29,0,0" TextWrapping="Wrap" Text="Aryant Utility" VerticalAlignment="Top" FontFamily="Roboto" FontSize="32" FontWeight="Light" Foreground="White" TextAlignment="Center"/>
+        <TextBlock x:Name="AppTitle" HorizontalAlignment="Center" Margin="0,29,0,0" TextWrapping="Wrap" Text="Aryant Utility" VerticalAlignment="Top" FontFamily="Roboto" FontSize="32" FontWeight="Light" Foreground="White" TextAlignment="Center" Width="173" Height="39"/>
         <TextBlock x:Name="PingTarget" HorizontalAlignment="Center" Margin="0,72,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="153" FontFamily="Roboto" Foreground="#FFD2D2D2" TextAlignment="Center"/>
-        <TextBlock x:Name="PingCounter" HorizontalAlignment="Center" Margin="0,188,0,0" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="60" FontFamily="OpenSans" Foreground="White"
-/>
-        <TextBlock x:Name="wersja" Margin="0,471,0,0" TextWrapping="Wrap" Foreground="#FF7D7D7D" VerticalAlignment="Top" TextAlignment="center" FontFamily="Roboto" Width="58" Height="19" HorizontalAlignment="Center"><Run Language="pl-pl" Text="V1.0"/></TextBlock>
+        <TextBlock x:Name="PingCounter" TextWrapping="Wrap" TextAlignment="Center" FontSize="60" FontFamily="OpenSans" Foreground="White" HorizontalAlignment="Center" Width="764" Height="72" VerticalAlignment="Top" Margin="0,195,0,0"><Run Language="pl-pl" Text="Waiting..."/></TextBlock>
+        <TextBlock x:Name="wersja" Margin="0,471,0,0" TextWrapping="Wrap" Foreground="#FF7D7D7D" VerticalAlignment="Top" TextAlignment="center" FontFamily="Roboto" Width="58" Height="19" HorizontalAlignment="Center"><Run Text="V1."/><Run Language="pl-pl" Text="1"/></TextBlock>
         <Button x:Name="StopButton" Margin="343,361,343,0" Content="Stop Test" FontFamily="Roboto" FontWeight="normal" BorderBrush="#FF707070" Height="26" VerticalAlignment="Top" Width="164" Background="#FF313131" Foreground="#FFF7F7F7" Click="StopButton_Click" Visibility="Hidden"/>
+        <TextBlock x:Name="PingCountdown" HorizontalAlignment="Center" TextWrapping="Wrap" Foreground="#FF848484" FontFamily="Roboto" Width="80" TextAlignment="Center" VerticalAlignment="Top" Height="18" Margin="0,327,0,0" Visibility="Visible" Text=""/>
     </Grid>
 </Window>

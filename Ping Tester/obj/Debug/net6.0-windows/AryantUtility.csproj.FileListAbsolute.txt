@@ -19,3 +19,4 @@ C:\pingtester3\Ping Tester\Ping Tester\obj\Debug\net6.0-windows\refint\AryantUti
 C:\pingtester3\Ping Tester\Ping Tester\obj\Debug\net6.0-windows\AryantUtility.pdb
 C:\pingtester3\Ping Tester\Ping Tester\obj\Debug\net6.0-windows\AryantUtility.genruntimeconfig.cache
 C:\pingtester3\Ping Tester\Ping Tester\obj\Debug\net6.0-windows\ref\AryantUtility.dll
+C:\pingtester3\Ping Tester\Ping Tester\obj\Debug\net6.0-windows\AryantUtility_Content.g.cs

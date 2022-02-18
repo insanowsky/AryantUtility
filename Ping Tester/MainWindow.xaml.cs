@@ -31,12 +31,13 @@ namespace Ping_Tester
         private async void StartButton_Click(object sender, RoutedEventArgs e)
         {
             StopButton.Visibility = Visibility.Visible;
-            int lepszyawait = 0;
-            while (lepszyawait < 4)
+            PingCountdown.Visibility = Visibility.Visible;
+            int lepszyawait = 10;
+            while (lepszyawait >= 1)
             {
                 Ping pingSender = new Ping();
 
-                // Create a buffer of 32 bytes of data to be transmitted.
+                // tworzy 32 bitowy stos danych do wyslania
                 string data = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
                 byte[] buffer = Encoding.ASCII.GetBytes(data);
 
@@ -44,25 +45,30 @@ namespace Ping_Tester
 
                 PingOptions options = new PingOptions(64, true);
 
-                // Send the request.
+                // wysyla pinga
+                var ipgoogle = "1.1.1.1";
+                var ipcloudflare = "8.8.8.8";
+                Random losoweip = new Random();
+                var zmienneip = new[] {ipgoogle, ipcloudflare};
 
-                PingReply reply = pingSender.Send("1.1.1.1", timeout, buffer);
+                PingReply reply = pingSender.Send(zmienneip[losoweip.Next(zmienneip.Length)], timeout, buffer);
+                if (reply.Status == IPStatus.Success) { 
 
-                if (reply.Status == IPStatus.Success)
-                {
                     PingTarget.Text = "pinging: " + (reply.Address.ToString());
                     PingCounter.Text = (reply.RoundtripTime.ToString()) + "ms";
-                  
+                    PingCountdown.Text = "Time left: " + lepszyawait.ToString();
+
                 }
                 else
                 {
-                    MessageBox.Show("Connection Failed");
+                    PingCounter.Text = "Failed to ping " + (reply.Address.ToString());
                 }
                 await Task.Delay(1000);
-                lepszyawait++;
-                if (lepszyawait == 5)
+                lepszyawait--;
+                if (lepszyawait < 1)
                 {
                     StopButton.Visibility = Visibility.Hidden;
+                    PingCountdown.Text = "Test Finished";
                 }
             }
         }

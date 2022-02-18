@@ -1,0 +1,2 @@
+C:\release\beta\AryantUtility.pdb
+C:\release\beta\AryantUtility.exe
