@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:Ping_Tester"
         mc:Ignorable="d"
         ResizeMode="CanMinimize"
-        Title="Aryant Utility" Height="500" Width="900" FontSize="14" FontWeight="Normal" MinWidth="900" MinHeight="550" Background="#FF6D6C6C" Icon="/icon1.png" Topmost="True">
+        Title="Aryant Utility" Height="500" Width="900" FontSize="14" FontWeight="Normal" MinWidth="900" MinHeight="550" Background="#FF6D6C6C" Icon="/icon1.png" WindowState="Minimized">
 
 
     <Grid Visibility="Visible" Background="#FF212121">

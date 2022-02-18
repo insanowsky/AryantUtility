@@ -49,10 +49,11 @@ namespace Ping_Tester
                 var ipgoogle = "1.1.1.1";
                 var ipcloudflare = "8.8.8.8";
                 Random losoweip = new Random();
-                var zmienneip = new[] {ipgoogle, ipcloudflare};
+                var zmienneip = new[] { ipgoogle, ipcloudflare };
 
                 PingReply reply = pingSender.Send(zmienneip[losoweip.Next(zmienneip.Length)], timeout, buffer);
-                if (reply.Status == IPStatus.Success) { 
+                if (reply.Status == IPStatus.Success)
+                {
 
                     PingTarget.Text = "pinging: " + (reply.Address.ToString());
                     PingCounter.Text = (reply.RoundtripTime.ToString()) + "ms";
@@ -79,11 +80,3 @@ namespace Ping_Tester
         }
     }
 }
-    
-    
-
-    
-
-        
-
-
