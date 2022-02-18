@@ -1,0 +1,22 @@
+C:\pingtester3\Ping Tester\Ping Tester\obj\Debug\net6.0-windows\Ping Tester.csproj.AssemblyReference.cache
+C:\pingtester3\Ping Tester\Ping Tester\obj\Debug\net6.0-windows\MainWindow.g.cs
+C:\pingtester3\Ping Tester\Ping Tester\obj\Debug\net6.0-windows\App.g.cs
+C:\pingtester3\Ping Tester\Ping Tester\obj\Debug\net6.0-windows\Ping Tester_MarkupCompile.cache
+C:\pingtester3\Ping Tester\Ping Tester\obj\Debug\net6.0-windows\Ping Tester_MarkupCompile.lref
+C:\pingtester3\Ping Tester\Ping Tester\bin\Debug\net6.0-windows\Ping Tester.exe
+C:\pingtester3\Ping Tester\Ping Tester\bin\Debug\net6.0-windows\Ping Tester.deps.json
+C:\pingtester3\Ping Tester\Ping Tester\bin\Debug\net6.0-windows\Ping Tester.runtimeconfig.json
+C:\pingtester3\Ping Tester\Ping Tester\bin\Debug\net6.0-windows\Ping Tester.dll
+C:\pingtester3\Ping Tester\Ping Tester\bin\Debug\net6.0-windows\Ping Tester.pdb
+C:\pingtester3\Ping Tester\Ping Tester\obj\Debug\net6.0-windows\MainWindow.baml
+C:\pingtester3\Ping Tester\Ping Tester\obj\Debug\net6.0-windows\Ping Tester.g.resources
+C:\pingtester3\Ping Tester\Ping Tester\obj\Debug\net6.0-windows\Ping Tester.GeneratedMSBuildEditorConfig.editorconfig
+C:\pingtester3\Ping Tester\Ping Tester\obj\Debug\net6.0-windows\Ping Tester.AssemblyInfoInputs.cache
+C:\pingtester3\Ping Tester\Ping Tester\obj\Debug\net6.0-windows\Ping Tester.AssemblyInfo.cs
+C:\pingtester3\Ping Tester\Ping Tester\obj\Debug\net6.0-windows\Ping Tester.csproj.CoreCompileInputs.cache
+C:\pingtester3\Ping Tester\Ping Tester\obj\Debug\net6.0-windows\Ping Tester.dll
+C:\pingtester3\Ping Tester\Ping Tester\obj\Debug\net6.0-windows\refint\Ping Tester.dll
+C:\pingtester3\Ping Tester\Ping Tester\obj\Debug\net6.0-windows\Ping Tester.pdb
+C:\pingtester3\Ping Tester\Ping Tester\obj\Debug\net6.0-windows\Ping Tester.genruntimeconfig.cache
+C:\pingtester3\Ping Tester\Ping Tester\obj\Debug\net6.0-windows\ref\Ping Tester.dll
+C:\pingtester3\Ping Tester\Ping Tester\obj\Debug\net6.0-windows\GeneratedInternalTypeHelper.g.cs

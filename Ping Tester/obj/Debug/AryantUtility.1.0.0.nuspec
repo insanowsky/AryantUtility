@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>AryantUtility</id>
+    <version>1.0.0</version>
+    <authors>AryantUtility</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0-windows7.0" />
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net6.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WPF" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\pingtester3\Ping Tester\Ping Tester\bin\Debug\net6.0-windows\AryantUtility.runtimeconfig.json" target="lib\net6.0-windows7.0\AryantUtility.runtimeconfig.json" />
+    <file src="C:\pingtester3\Ping Tester\Ping Tester\bin\Debug\net6.0-windows\AryantUtility.dll" target="lib\net6.0-windows7.0\AryantUtility.dll" />
+  </files>
+</package>
