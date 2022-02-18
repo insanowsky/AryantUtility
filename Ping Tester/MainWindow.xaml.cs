@@ -41,7 +41,7 @@ namespace Ping_Tester
                 string data = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
                 byte[] buffer = Encoding.ASCII.GetBytes(data);
 
-                int timeout = 3000;
+                int timeout = 1000;
 
                 PingOptions options = new PingOptions(64, true);
 
