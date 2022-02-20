@@ -13,5 +13,6 @@ namespace Ping_Tester
     /// </summary>
     public partial class App : Application
     {
+
     }
 }

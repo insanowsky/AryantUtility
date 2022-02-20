@@ -1,20 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.Net.NetworkInformation;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
-using System.Windows.Controls;
-using System.Windows.Data;
-using System.Windows.Documents;
 using System.Windows.Input;
-using System.Windows.Media;
-using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
-using System.Windows.Diagnostics;
-using System.Net.NetworkInformation;
 
 namespace Ping_Tester
 {
@@ -28,6 +17,8 @@ namespace Ping_Tester
             InitializeComponent();
         }
 
+
+
         private async void StartButton_Click(object sender, RoutedEventArgs e)
         {
             StopButton.Visibility = Visibility.Visible;
@@ -35,7 +26,7 @@ namespace Ping_Tester
             int lepszyawait = 10;
             while (lepszyawait >= 1)
             {
-                Ping pingSender = new Ping();
+                Ping pingSender = new();
 
                 // tworzy 32 bitowy stos danych do wyslania
                 string data = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
@@ -43,13 +34,14 @@ namespace Ping_Tester
 
                 int timeout = 1000;
 
-                PingOptions options = new PingOptions(64, true);
+                PingOptions options = new(64, true);
 
                 // wysyla pinga
-                var ipgoogle = "1.1.1.1";
-                var ipcloudflare = "8.8.8.8";
-                Random losoweip = new Random();
-                var zmienneip = new[] { ipgoogle, ipcloudflare };
+                var ipcloudflare = "1.1.1.1";
+                var ipgoogle = "8.8.8.8";
+                var ipgoogle2 = "8.8.4.4";
+                Random losoweip = new();
+                var zmienneip = new[] { ipgoogle, ipcloudflare, ipgoogle2 };
 
                 PingReply reply = pingSender.Send(zmienneip[losoweip.Next(zmienneip.Length)], timeout, buffer);
                 if (reply.Status == IPStatus.Success)
@@ -58,6 +50,7 @@ namespace Ping_Tester
                     PingTarget.Text = "pinging: " + (reply.Address.ToString());
                     PingCounter.Text = (reply.RoundtripTime.ToString()) + "ms";
                     PingCountdown.Text = "Time left: " + lepszyawait.ToString();
+
 
                 }
                 else
@@ -78,5 +71,38 @@ namespace Ping_Tester
         {
             System.Windows.Application.Current.Shutdown();
         }
+
+        private void CloseButton_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.MainWindow.Close();
+        }
+
+        private void MaximizeButton_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Sorry but this app is not optimized for maximizing yet :(");
+
+            //tba after optimizing for full screen
+            //if (Application.Current.MainWindow.WindowState != WindowState.Maximized)
+            //{
+            // Application.Current.MainWindow.WindowState = WindowState.Maximized;
+            //} else
+            //{
+            //  Application.Current.MainWindow.WindowState = WindowState.Normal;
+            //}
+        }
+
+        private void MinimizeButton_Click(object sender, RoutedEventArgs e)
+        {
+            Application.Current.MainWindow.WindowState = WindowState.Minimized;
+        }
+
+        private void Border_MouseDown(object sender, MouseButtonEventArgs e)
+        {
+            if (e.LeftButton == MouseButtonState.Pressed)
+            {
+                DragMove();
+            }
+        }
+
     }
 }
