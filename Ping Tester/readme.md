@@ -1,3 +1,12 @@
+<h1>Important: .NET FRAMEWORK REDIST NEEDS TO BE INSTALLED FOR APP TO WORK</h1>
+
+
+
+
+
+
+
+
 bugi: 
 	layout na fullscreenie
 	ikonka w low rez
